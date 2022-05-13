@@ -1,0 +1,49 @@
+article{
+    color: white;
+    font-size: 15px;
+}
+h1{
+    margin: 40px;
+    text-align: center;
+}
+.instrucciones{
+    margin: 60px;
+    align-content: left;
+    text-align: left;
+    font: oblique bold 120% cursive;
+}
+.formPersonaliza{
+    width: 50%;
+    margin: 30px;
+    float: left;
+    text-align: center;
+}
+
+.form-select{
+    margin: 15px;
+    align-content: left;
+}
+.form-select select{
+    width: 30%;
+    height: 40px;
+    border-radius: 20px;
+    border: 5px solid rgb(59, 7, 109);
+    margin-left: 15px;
+    color:black;
+}
+.form-select label{
+    color: white;
+    margin: 50px;width: 80%;
+    height: 60px;
+}
+.form-boton input{
+    width: 40%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 5px solid rgb(59, 7, 109);
+    text-decoration: none;
+    color:white;
+    font: 400;
+    background-color: rgb(71, 5, 71);
+}

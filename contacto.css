@@ -1,0 +1,50 @@
+article{
+    color: white;
+    font-size: 25px;
+}
+.instrucciones{
+    margin: 50px;
+    align-content: center;
+    text-align: center;
+}
+.formContacto{
+    margin: 50px;
+}
+.form-input{
+    margin: 15px;
+    text-align: center;
+    }
+.form-input label{
+    color: white;
+    margin: 50px;
+}
+.form-action{
+    margin: 80px;
+    text-align: center;
+}
+.form-input input, textarea{
+    width: 30%;
+    height: 30px;
+    color:black;
+    margin-left: 30px;
+    border-radius: 20px;
+    border: 5px solid rgb(59, 7, 109);    
+}
+.form-input textarea{
+    height: 80px;
+}
+.form-boton{
+    margin: 5px;
+    text-align: center;
+}
+.form-boton input{
+    width: 40%;
+    padding: 20px;
+    border-radius: 20px;
+    border: 5px solid rgb(59, 7, 109);
+    text-decoration: none;
+    color:white;
+    font: 400;
+    background-color: rgb(71, 5, 71);
+}
+
