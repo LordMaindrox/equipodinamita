@@ -4,6 +4,8 @@
     --color-subtitulos: #EBF5EE;
     --color-crema: #D8BFAA;
     --color-gris: #808080;
+    --color-melon: #D5B9B2;
+    --color-boton-activo:#5AFF15;
     --sm:14px;
     --md:16px;
     --lg:24px;
@@ -28,7 +30,7 @@ html {
     width: auto;
     border-radius: 8PX;
     background-image: url(./src/imagenes/fondo_funkos.jpeg);
-    /*opacity: 75%;*/
+    opacity: 75%;
     background-color: var(--color-crema);
 }
 .logo {
@@ -47,11 +49,22 @@ html {
     color: var(--morado-fondo);
     background-color: var(--color-crema);
     padding: 10px;
+    border-radius: 8px;
+}
+.titulo2 {
+    font-size: var(--md);
+    font-weight:500;
+    text-align: center;
+    color: var(--color-melon);
+    /*background-color: var(--color-crema);*/
+    padding: 10px;
+    border-radius: 8px;
 }
 .subtitulo {
-    font-size: var(--md);
+    font-size: var(--sm);
     font-weight: 300;
     text-align: center;
+    color: var(--color-subtitulos);
 }
 .contenido2 {
     display: grid;   
@@ -64,8 +77,9 @@ html {
     border: none;
     height: 24px;
     cursor: pointer;
+    font-weight: bold;
     background-color: var(--color-gris);
-    color: white;
+    color: var(--morado-fondo);
 }
 
 
