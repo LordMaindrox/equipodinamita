@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    margin: 0;
+    /*margin: 0;*/
 }
 :root {
     --morado-fondo: #542344;
@@ -39,6 +39,10 @@ button:hover{
 .container{
     max-width: 1400px;
     margin: auto;
+}
+
+.color-resalto{
+    color: var(--morado-fondo);
 }
 header{
     background-color: var(--color-subtitulos);
@@ -100,3 +104,76 @@ header a:hover{
 #hero h1{
     color: aliceblue;
 }
+#otros-modelos{
+
+}
+
+#otros-modelos .container{
+    text-align: center;
+    padding: 100px 12px;
+    
+}
+
+#grupo-modelos{
+    background-color: var(--color-gris);
+    color: var(--color-subtitulos);
+    text-align: center;
+}
+
+#grupo-modelos .container{
+    padding: 80px 12px;
+}
+
+#grupo-modelos h2{
+    margin-top: 0;
+}
+
+#grupo-modelos p{
+    display: none;
+}
+
+#grupo-modelos .tarjetero{
+    background-position: center center;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+    /*border-radius: 25px;*/
+}
+
+.tarjeta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(src/imagenes/Funkotarjeta1.png);
+    
+}
+.tarjeta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(src/imagenes/tarjeta2.jpeg);
+}
+
+.tarjeta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(src/imagenes/principal.png);
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 250px 12 px;
+}
+
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
