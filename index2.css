@@ -26,7 +26,7 @@ li{ font-size: 1.25em;}
 button{
     font-size: 1.5em;
     font-weight: bold;
-    padding: 10px 20 px;
+    padding: 10px 20px;
     border-radius: 10px;
     border: 2px solid var(--morado-fondo);
     box-shadow: 2px 2px 10px black;
@@ -54,6 +54,7 @@ header .logo{
     font-weight: bold;
     color: var(--morado-fondo);
     font-size: 1.5em;
+    /*text-align: center;*/
 
 }
 header .container{
@@ -70,7 +71,7 @@ header nav{
 }
 
 header a{
-    pad: 5px 12 px;
+    padding: 10px 12px;
     text-decoration: none;
     font-weight: bold;
     color: black;
@@ -96,9 +97,6 @@ header a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-
-
-
 }
 
 #hero h1{
@@ -118,26 +116,23 @@ header a:hover{
     background-color: var(--color-gris);
     color: var(--color-subtitulos);
     text-align: center;
+    
 }
 
 #grupo-modelos .container{
-    padding: 80px 12px;
+    padding: 100px 12px;
 }
 
 #grupo-modelos h2{
-    margin-top: 0;
+    margin top: 0;
 }
 
 #grupo-modelos p{
     display: none;
 }
 
-#grupo-modelos .tarjetero{
-    background-position: center center;
-    background-size: cover;
-    padding: 0px;
-    margin: 0px;
-    /*border-radius: 25px;*/
+#grupo-modelos .carta{
+    
 }
 
 .tarjeta:first-child{
@@ -146,8 +141,13 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     ) 
-    ,url(src/imagenes/Funkotarjeta1.png);
-    
+    ,url(src/imagenes/1carta.png);
+    background-position: center center;
+    background-size: cover;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
 }
 .tarjeta:nth-child(2){
     background-image: linear-gradient(
@@ -155,7 +155,13 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     ) 
-    ,url(src/imagenes/tarjeta2.jpeg);
+    ,url(src/imagenes/2carta.jpeg);
+    background-position: center center;
+    background-size: cover;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
 }
 
 .tarjeta:nth-child(3){
@@ -164,7 +170,13 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     ) 
-    ,url(src/imagenes/principal.png);
+    ,url(src/imagenes/3carta.jpeg);
+    background-position: center center;
+    background-size: cover;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
 }
 
 #caracteristicas .container{
@@ -177,3 +189,120 @@ header a:hover{
     font-weight: bold;
 }
 
+footer{
+    background-color: #542344;
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: var(--color-melon);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width:720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #otros-modelos .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #otros-modelos .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #otros-modelos .ima-container{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ) 
+        ,url(src/imagenes/otros\ modelos.webp);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #grupo-modelos .carta{
+        display: flex;
+        justify-content: center;
+    }
+
+    #grupo-modelos p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #grupo-modelos h3{
+        margin-top: 0;
+    
+    }
+
+    #grupo-modelos .tarjeta{
+        padding: 40px;
+    }
+
+    #caracteristicas{
+
+    }
+
+    #caracteristicas .container{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 100px 0px;
+    }
+
+    #caracteristicas ul{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #caracteristicas .ima2-container{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ) 
+        ,url(src/imagenes/calidad.jpeg);
+        background-size: cover;
+        background-position: center center;
+        height: 300px;
+        width: 400px;
+    }
+}
