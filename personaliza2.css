@@ -1,0 +1,398 @@
+*{
+    box-sizing: border-box;
+    /*margin: 0;*/
+}
+:root {
+    --morado-fondo: #542344;
+    --color-titulos: #BFD1E5;
+    --color-subtitulos: #EBF5EE;
+    --color-crema: #D8BFAA;
+    --color-gris: #808080;
+    --color-melon: #D5B9B2;
+    --color-boton-activo:#5AFF15;
+}
+body{ 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid var(--morado-fondo);
+    box-shadow: 2px 2px 10px black;
+    color: var(--color-crema);
+    background-color: var(--morado-fondo);
+}
+button:hover{
+    background-color: var(--color-gris);
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-resalto{
+    color: var(--morado-fondo);
+}
+header{
+    background-color: var(--color-subtitulos);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: var(--morado-fondo);
+    font-size: 1.5em;
+    /*text-align: center;*/
+
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 10px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: #542344;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(src/imagenes/hero.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: aliceblue;
+}
+
+#cajaformulario{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+
+}
+#cajaformulario .tituloformulario{
+    text-align: center;
+
+}
+
+.campos{
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    background-color: var(--color-gris);
+    padding: 2em;
+}
+
+
+#cajaformulario .ima3-container{
+
+}
+
+.formulario form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.formulario form .unacolumna{
+    grid-column: 1 / 3;
+}
+
+
+.campos form p{
+    margin: 0;
+    padding: .5em;
+}
+.formulario p input{
+    height: 30px;
+}
+
+.formularios p .lstaropa{
+    width:  12rem;
+    height: 30px;
+}
+.campos form input,
+.campos form select,
+.campos form textarea{
+    font-size: 1.1rem;
+    width: 100%;
+    height: 30px;
+    outline: 1px;
+    border-radius: 25px;
+}
+.formulario form .limpiar{
+    background-color:#542344
+    cursor:
+}
+
+.formulario form .limpiar:hover{
+    background-color: burlywood;
+    cursor:
+}
+
+#otros-modelos{
+
+}
+
+#otros-modelos .container{
+    text-align: center;
+    padding: 100px 12px;
+    
+}
+
+#grupo-modelos{
+    background-color: var(--color-gris);
+    color: var(--color-subtitulos);
+    text-align: center;
+    
+}
+
+#grupo-modelos .container{
+    padding: 100px 12px;
+}
+
+#grupo-modelos h2{
+    margin top: 0;
+}
+
+#grupo-modelos p{
+    display: none;
+}
+
+#grupo-modelos .carta{
+    
+}
+
+.tarjeta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(src/imagenes/1carta.png);
+    background-position: center center;
+    background-size: cover;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+.tarjeta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(src/imagenes/2carta.jpeg);
+    background-position: center center;
+    background-size: cover;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.tarjeta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(src/imagenes/3carta.jpeg);
+    background-position: center center;
+    background-size: cover;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 250px 12 px;
+}
+
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+footer{
+    background-color: #542344;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer .equipo{
+    color: var(--color-melon);
+}
+
+footer p{
+    margin: 0;
+    padding: 10px;
+    
+}
+
+footer .sociales{
+    
+    background-color: #808080;
+    color: black;
+}
+
+@media (min-width:720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+    .campos{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        justify-content: space-evenly;
+    }
+
+    #cajaformulario .ima3-container{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ) 
+        ,url(src/imagenes/tarjeta2.jpeg);
+        background-size: cover;
+        background-position: center center;
+        height: 50;
+        width: 400px;
+    }
+
+    #otros-modelos .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #otros-modelos .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #otros-modelos .ima-container{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ) 
+        ,url(src/imagenes/otros\ modelos.webp);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #grupo-modelos .carta{
+        display: flex;
+        justify-content: center;
+    }
+
+    #grupo-modelos p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #grupo-modelos h3{
+        margin-top: 0;
+    
+    }
+
+    #grupo-modelos .tarjeta{
+        padding: 40px;
+    }
+
+    #caracteristicas{
+
+    }
+
+    #caracteristicas .container{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 100px 0px;
+    }
+
+    #caracteristicas ul{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #caracteristicas .ima2-container{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ) 
+        ,url(src/imagenes/calidad.jpeg);
+        background-size: cover;
+        background-position: center center;
+        height: 300px;
+        width: 400px;
+    }
+}
