@@ -29,9 +29,13 @@
         <div class="campos">
             <div class="formulario">
             <form>
-                <p class="unacolumna">
+                <p>
                     <label>Fecha solicitada</label>
                     <input type="date" id="fecha" name="fecha" autocomplete="gift"required>
+                </p>
+                <p>
+                    <label>Número de piezas</label>
+                    <input type="number" id="piezas" name="piezas" autocomplete="gift"required>
                 </p>
                 <p class="unacolumna">
                     <label>Nombre completo</label>
@@ -84,14 +88,17 @@
                     </label>
                 </p>
                 <p class="unacolumna">
-                    <label for="pago">Método de pago </label>
+                    <!-- <label for="pago">Método de pago </label>
                     <input list="pago" name="lista" />
-                    <datalist id="pago">
+                    <datalist id="pago"> -->
+                        <label>Método de pago</label>
+                    <select>
                         <option value="Transferencia">Transferencia</option>
                         <option value="Tarjeta de crédito">Tarjeta de crédito</option>
                         <option value="Tarjeta de débito">Tarjeta de débito</option>
                         <option value="A contraentrega">A contraentrega</option>
-                    </datalist>
+                    <!-- </datalist> -->
+                </select>
                 </p>
                 <p>
                     <button type="reset">Limpiar</button>
