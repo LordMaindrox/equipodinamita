@@ -93,7 +93,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     ) 
-    ,url(src/imagenes/hero.jpeg);
+    ,url(src/imagenes/personaliza.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -150,21 +150,37 @@ header a:hover{
 }
 .campos form input,
 .campos form select,
-.campos form textarea{
-    font-size: 1.1rem;
+.campos form textarea,
+.campos form button{
     width: 100%;
-    height: 30px;
-    outline: 1px;
-    border-radius: 25px;
+    border: none;
+    outline: 0;
 }
+.campos form input,
+.campos form select{
+    font-size: 1.1rem;
+    height: 30px;
+    border-radius: 25px;
+    padding-top: 8px;
+    padding-left: 8px;
+}
+
+textarea{
+    font-size: 1.1rem;width: 100%;
+    height: 100px;
+    max-width: 100%;
+    max-height: 150px;
+    border-radius: 25px;
+    padding-top: 8px;
+    padding-left: 8px;
+}
+
 .formulario form .limpiar{
-    background-color:#542344
-    cursor:
+    background-color:#542344;
 }
 
 .formulario form .limpiar:hover{
     background-color: burlywood;
-    cursor:
 }
 
 #otros-modelos{
@@ -174,14 +190,12 @@ header a:hover{
 #otros-modelos .container{
     text-align: center;
     padding: 100px 12px;
-    
 }
 
 #grupo-modelos{
     background-color: var(--color-gris);
     color: var(--color-subtitulos);
     text-align: center;
-    
 }
 
 #grupo-modelos .container{
@@ -189,7 +203,7 @@ header a:hover{
 }
 
 #grupo-modelos h2{
-    margin top: 0;
+    margin-top: 0;
 }
 
 #grupo-modelos p{
@@ -332,12 +346,7 @@ footer .sociales{
     }
 
     #otros-modelos .ima-container{
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        ) 
-        ,url(src/imagenes/otros\ modelos.webp);
+        background-image:url(src/imagenes/principal.png);
         background-size: cover;
         background-position: center center;
         height: 500px;
@@ -384,12 +393,7 @@ footer .sociales{
     }
 
     #caracteristicas .ima2-container{
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        ) 
-        ,url(src/imagenes/calidad.jpeg);
+        background-image:url(src/imagenes/tarjeta3.jpeg);
         background-size: cover;
         background-position: center center;
         height: 300px;
