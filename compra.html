@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personaliza</title>
-    <link rel="stylesheet" href="./personaliza2.css">
+    <title>Portal de inicio</title>
+    <link rel="stylesheet" href="./compra.css">
     <script src="https://kit.fontawesome.com/621fad85a9.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -13,95 +13,99 @@
         <div class="container">
             <p class="logo">¡Descubre como te verias  al estilo Funko!</p>
             <nav>
-                <a href="./index2.html">Inicio</a>
-                <a href="./contacto2.html">Contacto</a>
-                <a href="./compra2.html">Compra</a>
+                <a href="./index.html">Inicio</a>
+                <a href="./personaliza.html">Personaliza</a>
+                <a href="./contacto.html">Contacto</a>
             </nav>
         </div>
     </header>
     <section id="hero">
-        <h1>Llena el formulario y cuentanos como quieres tu MeFunko</h1>
+        <h1>Envíos a toda la república sin costo adicional</h1>
         
     </section>
 
     <section id="cajaformulario">
-        <h2 class="tituloformulario">Completa el formulario</h2>
+        <h2 class="tituloformulario">Datos de envío</h2>
         <div class="campos">
             <div class="formulario">
             <form>
+                <p>
+                    <label>Fecha solicitada</label>
+                    <input type="date" id="fecha" name="fecha" autocomplete="gift"required>
+                </p>
+                <p>
+                    <label>Número de piezas</label>
+                    <input type="number" id="piezas" name="piezas" autocomplete="gift"required>
+                </p>
                 <p class="unacolumna">
-                    <label>Sexo</label>
-                    <input type="radio" name="sexo">Masculino
-                    <input type="radio" name="sexo">Femenino
+                    <label>Nombre completo</label>
+                    <input type="text" id="Nombre completo" name="Nombre completo" autocomplete="gift"required>
+                </p>
+                <p class="unacolumna">
+                    <label>Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" autocomplete="gift"required>
                 </p>
                 <p>
-                    <label >Color de ojos:</label>
-                    <input type="color">
+                    <label>Estado</label>
+                    <input type="text" id="estado" name="estado" autocomplete="gift"required>
                 </p>
-                
-                <P>
-                    <label >Color de cabello:</label>
-                    <input type="color">
-                </P>
-                    
                 <p>
-                    <label >Color de piel:</label>
-                    <input type="color">
+                    <label>Municipio</label>
+                    <input type="text" id="municipio" name="municipio" autocomplete="gift"required>
+                </p>
+                <p>
+                    <label>Código postal</label>
+                    <input type="text" id="postal" name="postal" autocomplete="gift"required>
+                </p>
+                <p>
+                    <label>Colonia</label>
+                    <input type="text" id="colonia" name="colonia" autocomplete="gift"required>
+                </p>
+                <p>
+                    <label>Calle</label>
+                    <input type="text" id="calle" name="calle" autocomplete="gift"required>
+                </p>
+                <p>
+                    <label>Número exterior</label>
+                    <input type="number" id="numexterior" name="numexterior" autocomplete="gift"required>
+                </p>
+                <p class="unacolumna">
+                    <label>Referencias</label>
+                    <input type="dirección" id="direccion" name="direccion" autocomplete="gift"required>
                 </p>
 
                 <p>
-                        <label>Ropa</label>
-                        <Select class="listaropa">
-                        <option selected disabled>Seleccione un valor</option>
-                        <option value="Vestido">Vestido</option>
-                        <option value="Pantalón">Pantalón</option>
-                        <option value="Playera">Playera</option>
-                        <option value="Falda">Falda</option>
-                        </Select>
+                    <label>Telefóno</label>
+                    <input type="tel" id="telefono" name="telefono" autocomplete="gift"required>
                 </p>
-                    
                 <p>
-                    <label >Color de ropa:</label>
-                    <input type="color">
+                    <label>Celular</label>
+                    <input type="tel" id="telefono" name="telefono" autocomplete="gift"required>
                 </p>
-
-                <p>
-                        <label>Calzado</label>
-                        <Select class="listacalzado">
-                        <option selected disabled>Seleccione un valor</option>
-                        <option value="Tenis">Tenis</option>
-                        <option value="Zapatos">Zapatos</option>
-                        </Select>
-                </p>
-                    
-                <p>
-                    <label >Color de calzado:</label>
-                    <input type="color">
-                </p>
-                    
                 <p class="unacolumna">
-                    <label for="Accesorio o Detalle">Accesorio o Detalle </label>
-                        <input type="text" id="Detalle o accesorio" name="Detalle o accesorio" autocomplete="gift"required>
-                    </label>
-                </p>
-                    
-                <p class="unacolumna">
-                    <label for="Mensaje">Mensaje </label>
+                    <label for="Mensaje">Dedicatoria </label>
                     <textarea type="text" id="Mensaje" name="Mensaje" autocomplete="Message"required></textarea>
                     </label>
                 </p>
                 <p class="unacolumna">
-                    <label>Comparte tu foto:</label>
-                    <input type="file">
+                    <!-- <label for="pago">Método de pago </label>
+                    <input list="pago" name="lista" />
+                    <datalist id="pago"> -->
+                        <label>Método de pago</label>
+                    <select>
+                        <option value="Transferencia">Transferencia</option>
+                        <option value="Tarjeta de crédito">Tarjeta de crédito</option>
+                        <option value="Tarjeta de débito">Tarjeta de débito</option>
+                        <option value="A contraentrega">A contraentrega</option>
+                    <!-- </datalist> -->
+                </select>
                 </p>
                 <p>
                     <button type="reset">Limpiar</button>
-                </p> 
+                </p>
                 <p>
-                    
-                    <button type="submit">Comprar</button>
-                    
-                </p> 
+                    <button type="submit">Enviar</button>
+                </p>
             </form>
             </div>
             <div class="ima3-container"></div>
