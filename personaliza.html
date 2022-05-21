@@ -28,30 +28,30 @@
         <h2 class="tituloformulario">Completa el formulario</h2>
         <div class="campos">
             <div class="formulario">
-            <form>
+            <form enctype="multipart/form-data" method="post" name="fileinfo">
                 <p class="unacolumna">
                     <label>Sexo</label>
-                    <input type="radio" name="sexo">Masculino
-                    <input type="radio" name="sexo">Femenino
+                    <input type="radio" name="sexo" value="Masculino">Masculino
+                    <input type="radio" name="sexo" value="Femenino">Femenino
                 </p>
                 <p>
                     <label >Color de ojos:</label>
-                    <input type="color">
+                    <input type="color" name="Ojos">
                 </p>
                 
                 <P>
                     <label >Color de cabello:</label>
-                    <input type="color">
+                    <input type="color" name="Cabello">
                 </P>
                     
                 <p>
                     <label >Color de piel:</label>
-                    <input type="color">
+                    <input type="color" name="Piel">
                 </p>
 
                 <p>
                         <label>Ropa</label>
-                        <Select class="listaropa">
+                        <Select class="listaropa" name="Ropa">
                         <option selected disabled>Seleccione un valor</option>
                         <option value="Vestido">Vestido</option>
                         <option value="Pantalón">Pantalón</option>
@@ -62,12 +62,12 @@
                     
                 <p>
                     <label >Color de ropa:</label>
-                    <input type="color">
+                    <input type="color" name="Color de ropa">
                 </p>
 
                 <p>
                         <label>Calzado</label>
-                        <Select class="listacalzado">
+                        <Select class="listacalzado" name="Zapatos">
                         <option selected disabled>Seleccione un valor</option>
                         <option value="Tenis">Tenis</option>
                         <option value="Zapatos">Zapatos</option>
@@ -76,7 +76,7 @@
                     
                 <p>
                     <label >Color de calzado:</label>
-                    <input type="color">
+                    <input type="color" name="Color de Zapatos">
                 </p>
                     
                 <p class="unacolumna">
@@ -173,5 +173,6 @@
             </div>
         </div>
     </footer>
+    <script src="./personaliza.js"></script>
 </body>
 </html>
