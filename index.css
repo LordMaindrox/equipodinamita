@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
-    /*margin: 0;*/
+    margin: 0;
+    padding: 0;
 }
 :root {
     --morado-fondo: #542344;
@@ -185,7 +186,8 @@ header a:hover{
 
 #caracteristicas .container{
     text-align: center;
-    padding: 250px 12 px;
+    padding: 0;
+    margin: 0;
 }
 
 #caracteristicas li{

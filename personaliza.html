@@ -28,30 +28,30 @@
         <h2 class="tituloformulario">Completa el formulario</h2>
         <div class="campos">
             <div class="formulario">
-            <form>
+            <form enctype="multipart/form-data" method="post" name="fileinfo">
                 <p class="unacolumna">
                     <label>Sexo</label>
-                    <input type="radio" name="sexo">Masculino
-                    <input type="radio" name="sexo">Femenino
+                    <input type="radio" name="sexo" value="Masculino">Masculino
+                    <input type="radio" name="sexo" value="Femenino">Femenino
                 </p>
                 <p>
                     <label >Color de ojos:</label>
-                    <input type="color">
+                    <input type="color" name="Ojos">
                 </p>
                 
                 <P>
                     <label >Color de cabello:</label>
-                    <input type="color">
+                    <input type="color" name="Cabello">
                 </P>
                     
                 <p>
                     <label >Color de piel:</label>
-                    <input type="color">
+                    <input type="color" name="Piel">
                 </p>
 
                 <p>
                         <label>Ropa</label>
-                        <Select class="listaropa">
+                        <Select class="listaropa" name="Ropa">
                         <option selected disabled>Seleccione un valor</option>
                         <option value="Vestido">Vestido</option>
                         <option value="Pantalón">Pantalón</option>
@@ -62,12 +62,12 @@
                     
                 <p>
                     <label >Color de ropa:</label>
-                    <input type="color">
+                    <input type="color" name="Color de ropa">
                 </p>
 
                 <p>
                         <label>Calzado</label>
-                        <Select class="listacalzado">
+                        <Select class="listacalzado" name="Zapatos">
                         <option selected disabled>Seleccione un valor</option>
                         <option value="Tenis">Tenis</option>
                         <option value="Zapatos">Zapatos</option>
@@ -76,7 +76,7 @@
                     
                 <p>
                     <label >Color de calzado:</label>
-                    <input type="color">
+                    <input type="color" name="Color de Zapatos">
                 </p>
                     
                 <p class="unacolumna">
@@ -113,30 +113,33 @@
         <div class="container">
             <div class="ima-container"></div>
             <div class="texto">
-            <h2>Tu eliges el <span class="color-resalto">diseño</span></h2>
-            <p>Accede al formulario y elige como quieres que se vea tu MeFunko</p>
+            <h2>Personaliza los elementos de la  <span class="color-resalto">caja</span></h2>
+            <p>Puedes elegir el color, el número, nombre, frase y dedicatoria, imagen o fotografia de fondo, logo, redes sociales, etc.</p>
+            <p>Dentro del mensaje del formulario indicanos los elementos que deseas incluir</p>
             </div>
         </div>
     </section>
 
     <section id="grupo-modelos">
         <div class="container">
-            <h2>Tu imaginación es el límite</h2>
+            <h2>Pedidos especiales</h2>
+            <p>Si tienes alguna idea diferente</p>
+            <p>Envianos un mensaje y te cotizamos</p>
             <div class="carta">
                 <div class="tarjeta">
-                        <h3>Elige la forma de tu MeFunko</h3>
-                        <p>Nuestro catálogo es muy amplio, y nuestros clientes muy satisfechos</p>
-                        <button>Personaliza</button>
+                        <h3>Mascotas</h3>
+                        <p>Hacemos cualquier mascota, desde canarios hasta elefantes</p>
+                        <button>Contacto</button>
                 </div>
                 <div class="tarjeta">
-                        <h3>Envia una foto, y obten tu MeFunko</h3>
-                        <p>Solo envía una foto de esa persona especial, y dale el mejor regalo que pueda esperar</p>
-                        <button>Personaliza</button>
+                        <h3>Vehiculos</h3>
+                        <p>Tambien hacemos vehiculos, pide tu meFunko sobre, bici, moto o auto</p>
+                        <button>Contacto</button>
                 </div>
                 <div class="tarjeta">
-                        <h3>Agrega accesorios, sin límite</h3>
-                        <p>Puedes elegir de una amplia variedad de accesorios, gorras, lentes, sombreros, ropa, etc.  </p>
-                        <button>Personaliza</button>
+                        <h3>Sets</h3>
+                        <p>Si quieres algun set podemos crearlo bancas, playas, bares, etc. </p>
+                        <button>Contacto</button>
                 </div>
                 
             </div>    
@@ -173,5 +176,6 @@
             </div>
         </div>
     </footer>
+    <script src="./personaliza.js"></script>
 </body>
 </html>
