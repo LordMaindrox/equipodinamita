@@ -1,9 +1,9 @@
-var form = document.forms.namedItem("fileinfo");
+var form = document.forms.namedItem("contacto");
 form.addEventListener('submit', function(ev) {
-    console.log("presiono comprar")
-    var oData = new FormData(document.forms.namedItem("fileinfo"));
+    console.log("presiono enviar")
+    var oData = new FormData(document.forms.namedItem("contacto"));
     console.log(oData);
-    var mensaje = "Tu compra ha sido procesada con exito.\n"
+    var mensaje = "Los datos proporcionados son los siguientes:.\n"
     oData.forEach((value,key) => {
         console.log(key+"="+value);
         mensaje = mensaje+key+" = "+value+"\n";
@@ -17,7 +17,7 @@ form.addEventListener('submit', function(ev) {
     //   }
     // };
     // oReq.send(oData);
-    mensaje = mensaje+"¡Gracias por tu compra!\n";
+    mensaje = mensaje+"Nos estaremos comunicando contigo tan pronto como sea posible.   Puedes igualmente contactarnos a tráves de nuestras redes sociales \n";
     alert(mensaje);
     ev.preventDefault();
   }, true);

@@ -1,9 +1,9 @@
-var form = document.forms.namedItem("fileinfo");
+var form = document.forms.namedItem("compra");
 form.addEventListener('submit', function(ev) {
     console.log("presiono comprar")
-    var oData = new FormData(document.forms.namedItem("fileinfo"));
+    var oData = new FormData(document.forms.namedItem("compra"));
     console.log(oData);
-    var mensaje = "Tu funko a sido personalizado exitosamente.\n"
+    var mensaje = "Tu compra ha sido procesada con exito. Tus datos son los siguientes:\n"
     oData.forEach((value,key) => {
         console.log(key+"="+value);
         mensaje = mensaje+key+" = "+value+"\n";
